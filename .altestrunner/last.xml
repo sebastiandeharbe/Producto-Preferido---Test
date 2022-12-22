@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <assemblies>
-  <assembly name="50200 TestProductoPreferido" test-framework="PS Test Runner" run-date="2022-12-22" run-time="12:51:00" total="6" passed="6" failed="0" skipped="0" time="2.766">
-    <collection name="TestProductoPreferido" total="6" passed="6" failed="0" skipped="0" time="2.766" Skipped="0">
-      <test name="TestProductoPreferido:CrearRandomItems" method="CrearRandomItems" time="0.25" result="Pass" />
-      <test name="TestProductoPreferido:TestCheckValidateProductoPreferido" method="TestCheckValidateProductoPreferido" time="0.75" result="Pass" />
-      <test name="TestProductoPreferido:TestFailFieldProductoPreferido" method="TestFailFieldProductoPreferido" time="0.143" result="Pass" />
-      <test name="TestProductoPreferido:TestFailValidateProductoPreferido" method="TestFailValidateProductoPreferido" time="0.093" result="Pass" />
-      <test name="TestProductoPreferido:TestFieldPageCustomer" method="TestFieldPageCustomer" time="0.983" result="Pass" />
-      <test name="TestProductoPreferido:TestPageCustomer" method="TestPageCustomer" time="0.547" result="Pass" />
+  <assembly name="50200 TestProductoPreferido" test-framework="PS Test Runner" run-date="2022-12-22" run-time="14:36:15" total="6" passed="6" failed="0" skipped="0" time="0.83">
+    <collection name="TestProductoPreferido" total="6" passed="6" failed="0" skipped="0" time="0.83" Skipped="0">
+      <test name="TestProductoPreferido:CrearRandomItems" method="CrearRandomItems" time="0.047" result="Pass" />
+      <test name="TestProductoPreferido:TestCheckValidateProductoPreferido" method="TestCheckValidateProductoPreferido" time="0.173" result="Pass" />
+      <test name="TestProductoPreferido:TestFailFieldProductoPreferido" method="TestFailFieldProductoPreferido" time="0.06" result="Pass" />
+      <test name="TestProductoPreferido:TestFailValidateProductoPreferido" method="TestFailValidateProductoPreferido" time="0.047" result="Pass" />
+      <test name="TestProductoPreferido:TestFieldPageCustomer" method="TestFieldPageCustomer" time="0.3" result="Pass" />
+      <test name="TestProductoPreferido:TestPageCustomer" method="TestPageCustomer" time="0.203" result="Pass" />
     </collection>
   </assembly>
 </assemblies>

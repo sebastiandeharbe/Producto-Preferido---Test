@@ -9,7 +9,6 @@ codeunit 50200 "TestProductoPreferido"
 
     var
         Assert: Codeunit Assert;
-        LibraryRandom: Codeunit "Library - Random";
         LibrarySales: Codeunit "Library - Sales";
 
     [Test]
@@ -138,14 +137,17 @@ codeunit 50200 "TestProductoPreferido"
     [Scope('OnPrem')]
     procedure TestPageCustomer()
     var
+        RecCustomer: Record Customer;
         CustomerCard: TestPage "Customer Card";
     begin
         //[Scenario]
         //Comprobar que existe el campo Producto Preferido en la ficha del cliente y que es editable
         //[Given]
-        //No hay condiciones.
+        //Debe existir un cliente en la db
         //[When]
         //El usuario abre la ficha de un cliente.
+        LibrarySales.CreateCustomer(RecCustomer);
+        RecCustomer.Insert();
         CustomerCard.OpenEdit(); //Abre la page en modo edit
 
         //[Then] 
@@ -153,26 +155,6 @@ codeunit 50200 "TestProductoPreferido"
         Assert.IsTrue(CustomerCard."Producto Preferido".Visible(), 'El Campo no es visible.');
         Assert.IsTrue(CustomerCard."Producto Preferido".Editable(), 'El Campo no es editable.');
     end;
-
-    [ConfirmHandler]
-    procedure ExpectedConfirmHandlerTrue(ActualQuestion: Text[1024]; var Reply: Boolean)
-    var
-        ExpectedQuestion: label '¿Desea confirmar el Nuevo Producto Preferido?';
-    begin
-        Assert.ExpectedConfirm(ExpectedQuestion, ActualQuestion);
-        Reply := true;
-    end;
-
-
-    //HANDLER FUNCTIONS PARA GESTIONAR MESSAGES, CONFIRMS, ETC
-    [MessageHandler]
-    procedure HandleMessageOnValidateProductoPreferido(Message: Text[1024])
-    var
-        Expected: Label 'Se añadió un Producto Preferido';
-    begin
-        Assert.AreEqual(Expected, Message, 'El mensaje es incorrecto.');
-    end;
-
 
 
     //UNA FUNCIÓN AUXILIAR PARA CREAR UN PRODUCTO ALEATORIO
@@ -193,5 +175,42 @@ codeunit 50200 "TestProductoPreferido"
             RecItem.Validate("Base Unit of Measure", RecUnitOfMeasure.Code);
         end;
         RecItem.Modify();
+    end;
+
+    local procedure CreateRandomCustomer(var RecCustomer: Record Customer)
+    var
+        LibraryUtility: Codeunit "Library - Utility";
+        LibraryERM: Codeunit "Library - ERM";
+        LibraryERMCountry: codeunit "Library - ERM Country Data";
+        RecUnitOfMeasure: Record "Unit of Measure";
+    begin
+
+    end;
+
+
+
+
+    //HANDLER FUNCTIONS PARA GESTIONAR MESSAGES, CONFIRMS, PAGES, ETC
+    [MessageHandler]
+    procedure HandleMessageOnValidateProductoPreferido(Message: Text[1024])
+    var
+        Expected: Label 'Se añadió un Producto Preferido';
+    begin
+        Assert.AreEqual(Expected, Message, 'El mensaje es incorrecto.');
+    end;
+
+    [ConfirmHandler]
+    procedure ExpectedConfirmHandlerTrue(ActualQuestion: Text[1024]; var Reply: Boolean)
+    var
+        ExpectedQuestion: label '¿Desea confirmar el Nuevo Producto Preferido?';
+    begin
+        Assert.ExpectedConfirm(ExpectedQuestion, ActualQuestion);
+        Reply := true;
+    end;
+
+    [ModalPageHandler]
+    procedure pageHandlr(var aaaa: TestPage "Customer Card")
+    begin
+        aaaa.OK().Invoke();
     end;
 }
