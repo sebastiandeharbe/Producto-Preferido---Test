@@ -1,0 +1,16 @@
+{
+    "containerResultPath":  "C:\\ProgramData\\BcContainerHelper\\Extensions\\bc20local\\my",
+    "launchConfigName":  "Your own server",
+    "securePassword":  "01000000d08c9ddf0115d1118c7a00c04fc297eb010000000f98e9960829ff4d86a9c96bb2cae34a0000000002000000000003660000c000000010000000d05f1d7a0a28ac77b2b298e947a621f20000000004800000a000000010000000808378880f94eb39f10be9467fd041b5180000003ba2b8919bd74ec4f61f522b889f42dd6bcd9927d456242c1400000086cd455ad6ac24b710b60744a5109f4603eaa2aa",
+    "userName":  "voxadocker",
+    "companyName":  "Testeando",
+    "testSuiteName":  "",
+    "vmUserName":  "",
+    "vmSecurePassword":  "",
+    "remoteContainerName":  "",
+    "dockerHost":  "",
+    "newPSSessionOptions":  "",
+    "testRunnerServiceUrl":  "",
+    "codeCoveragePath":  ".//.altestrunner//codecoverage.json",
+    "culture":  "en-US"
+}

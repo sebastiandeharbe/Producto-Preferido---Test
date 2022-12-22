@@ -3,13 +3,14 @@
   "name": "Producto Preferido - Testing",
   "publisher": "Sebastest",
   "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
+  "brief": "https://dynamics.microsoft.com/en-us/business-central/overview/",
+  "description": "a application",
+  "privacyStatement": "https://dynamics.microsoft.com/en-us/business-central/overview/",
+  "EULA": "https://dynamics.microsoft.com/en-us/business-central/overview/",
+  "help": "https://dynamics.microsoft.com/en-us/business-central/overview/",
+  "url": "https://dynamics.microsoft.com/en-us/business-central/overview/",
+  "contextSensitiveHelpUrl": "https://dynamics.microsoft.com/en-us/business-central/overview/",
+  "logo": "./algo.png",
   "screenshots": [],
   "dependencies": [
     {
@@ -60,7 +61,8 @@
   "showMyCode": true,
   "runtime": "6.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ],
   "target": "OnPrem"
 }

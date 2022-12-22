@@ -1,0 +1,10 @@
+<assembly name="50200 Test - Producto Preferido" test-framework="PS Test Runner" run-date="2022-12-22" run-time="11:56:08" total="1" passed="1" failed="0" skipped="0" time="0.077">
+  <collection name="Test - Producto Preferido" total="1" passed="1" failed="0" skipped="0" time="0.077" Skipped="0">
+    <test name="Test - Producto Preferido:CrearRandomItems" method="CrearRandomItems" time="0.063" result="Pass" />
+    <test name="Test - Producto Preferido:TestFailValidateProductoPreferido" method="TestFailValidateProductoPreferido" time="0.61" result="Pass" />
+    <test name="Test - Producto Preferido:TestCheckValidateProductoPreferido" method="TestCheckValidateProductoPreferido" time="0.216" result="Pass" />
+    <test name="Test - Producto Preferido:TestPageCustomer" method="TestPageCustomer" time="0.61" result="Pass" />
+    <test name="Test - Producto Preferido:TestFieldPageCustomer" method="TestFieldPageCustomer" time="0.28" result="Pass" />
+    <test name="Test - Producto Preferido:TestFailFieldProductoPreferido" method="TestFailFieldProductoPreferido" time="0.063" result="Pass" />
+  </collection>
+</assembly>
