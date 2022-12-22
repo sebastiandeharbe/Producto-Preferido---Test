@@ -1,2 +1,5 @@
 /.alpackages
-/.vscode/.alcache
+/.vscode
+*.app
+
+.vscode/launch.json
