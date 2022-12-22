@@ -1,4 +1,4 @@
-codeunit 50100 "Test - Producto Preferido"
+codeunit 50200 "Test - Producto Preferido"
 {
     Subtype = Test;
 
@@ -26,7 +26,7 @@ codeunit 50100 "Test - Producto Preferido"
 
         //[Acción del usuario] - [When] -> Acción del usuario
         asserterror RecCustomer.Validate("Producto Preferido", 'AAAAA'); //Asigno un producto que no exite.
-        
+
         //[Documentación de lo que debe pasar] - [Then] -> Lo que debe pasar
         Assert.AreEqual(StrSubstNo(ErrorExp, RecCustomer.FieldCaption("Producto Preferido"), RecCustomer.TableCaption(), 'AAAAA', RecItem.TableCaption()),
                         GetLastErrorText(),
@@ -71,7 +71,7 @@ codeunit 50100 "Test - Producto Preferido"
         //[When]
         //El usuario abre la ficha de un cliente.
         CustomerCard.OpenEdit(); //Abre la page en modo edit
-        
+
         //[Then] 
         //El campo Producto Preferido existe y es editable
         Assert.IsTrue(CustomerCard."Producto Preferido".Visible(), 'El Campo no es visible.');
