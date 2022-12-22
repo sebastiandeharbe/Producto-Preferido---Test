@@ -1,4 +1,4 @@
-codeunit 50200 "Test - Producto Preferido"
+codeunit 50200 "TestProductoPreferido"
 {
     Subtype = Test;
 

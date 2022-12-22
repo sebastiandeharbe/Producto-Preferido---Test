@@ -3,30 +3,30 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Producto Preferido - Testing">
     <body>
       <group id="body">
-        <trans-unit id="Codeunit 3926563069 - Method 3020146126 - NamedType 1668553604" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2272378274 - Method 3020146126 - NamedType 1668553604" size-unit="char" translate="yes" xml:space="preserve">
           <source>¿Desea confirmar el Nuevo Producto Preferido?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Test - Producto Preferido - Method ExpectedConfirmHandlerTrue - NamedType ExpectedQuestion</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TestProductoPreferido - Method ExpectedConfirmHandlerTrue - NamedType ExpectedQuestion</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3926563069 - Method 3776820914 - NamedType 2243457362" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2272378274 - Method 3776820914 - NamedType 2243457362" size-unit="char" translate="yes" xml:space="preserve">
           <source>Se añadió un Producto Preferido</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Test - Producto Preferido - Method HandleMessageOnValidateProductoPreferido - NamedType Expected</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TestProductoPreferido - Method HandleMessageOnValidateProductoPreferido - NamedType Expected</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3926563069 - Method 293132906 - NamedType 4023956938" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2272378274 - Method 293132906 - NamedType 4023956938" size-unit="char" translate="yes" xml:space="preserve">
           <source>StringLengthExceeded</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Test - Producto Preferido - Method TestFailFieldProductoPreferido - NamedType ExpectedError</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TestProductoPreferido - Method TestFailFieldProductoPreferido - NamedType ExpectedError</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3926563069 - Method 794244494 - NamedType 344119039" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2272378274 - Method 794244494 - NamedType 344119039" size-unit="char" translate="yes" xml:space="preserve">
           <source>The field %1 of table %2 contains a value (%3) that cannot be found in the related table (%4).</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Test - Producto Preferido - Method TestFailValidateProductoPreferido - NamedType ErrorExp</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TestProductoPreferido - Method TestFailValidateProductoPreferido - NamedType ErrorExp</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3926563069 - Method 956175117 - NamedType 219737493" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2272378274 - Method 956175117 - NamedType 219737493" size-unit="char" translate="yes" xml:space="preserve">
           <source>Validation error for Field: Producto Preferido,  Message = 'The field Producto Preferido of table Customer contains a value (123) that cannot be found in the related table (Item). (Select Refresh to discard errors)'</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Test - Producto Preferido - Method TestFieldPageCustomer - NamedType ErrorEsperado</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TestProductoPreferido - Method TestFieldPageCustomer - NamedType ErrorEsperado</note>
         </trans-unit>
       </group>
     </body>
