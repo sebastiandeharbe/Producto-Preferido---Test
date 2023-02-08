@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://bc20local",
+            "server": "http://bc20sandbox",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 130401,

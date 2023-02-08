@@ -59,7 +59,7 @@ codeunit 50200 "TestProductoPreferido"
     var
         RecCustomer: Record Customer;
         LibraryUtility: Codeunit "Library - Utility";
-        LibraryError: Codeunit "Library - Error Message";
+        // LibraryError: Codeunit "Library - Error Message";
         ExpectedError: Label 'StringLengthExceeded';
         ActualError: Text;
     begin
